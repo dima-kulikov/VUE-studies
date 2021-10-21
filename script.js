@@ -15,9 +15,19 @@ new Vue({
     data: {
       message: 'компонент работает',
       list: ['один', 'два', 'три'],
-      user: [
+      users: [
         {id: 1, name: 'Дима'},
-        {id: 2, name: 'Леся'}
+        {id: 2, name: 'Леся'},
+        {id: 3, name: 'Кот'}
       ]
+    },
+    methods:{
+      firstFunction(){
+        alert('Запуск функции через VUE')
+      },
+      secondFunction: function(){
+        alert('secondFunction')
+      }
+
     }
   })

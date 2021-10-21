@@ -41,11 +41,29 @@
   </div>
 
   <div id="second-vue">
-    <p>{{message}}</p>
+    <ul>
+      <li v-for="(item, index) in list">номер: {{index}}, значение: {{item}}</li>
+    </ul>
+
+    <ul>
+      <li v-for="item in users"> {{item.id}}: {{item.name}}</li>
+    </ul>
+
+
+    <table border="1" @click="users[0].id = 55">
+      <thead>
+        <th>ID</th>
+        <th>name</th>
+      </thead>
+      <tbody>
+        <tr v-for="user in users">
+          <td>{{user.id}}</td>
+          <td>{{user.name}}</td>
+        </tr>
+      </tbody>
+    </table>
+
   </div>
-
-
-
 
   <script src="script.js"></script>
 </body>
