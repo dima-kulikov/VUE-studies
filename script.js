@@ -3,7 +3,7 @@ new Vue({
     data: {
       message: 'Hello Vue!',
       id:'10',
-      status: 3,
+      status: 1,
       isActive: true,
       margin: 100,
       with: 400
