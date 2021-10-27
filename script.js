@@ -1,15 +1,53 @@
+
+new Vue({
+el: '#practic',
+data:{
+  counter:1
+},
+created: function(){
+
+},
+methods:{
+  hight(){
+    this.counter++;
+    alert("ВСЕ РАБОТАЕТ!!")
+  }
+}
+
+
+
+
+
+
+
+// created: function(){
+//   alert("ВСЕ РАБОТАЕТ!!")
+// },
+})
+
+
+
+
+
+// ----------------------------------------------
 new Vue({
     el: '#new-vue',
     data: {
       message: 'Hello Vue!',
       id:'10',
-      status: 1,
+      status: 3,
       isActive: true,
       margin: 100,
       with: 400
 
+    },
+    created: function(){
+     
+        alert(`Выбран ${this.status} статус`)
+      
     }
   })
+  // --------------------------------------------------------------
   new Vue({
     el:'#second-vue',
     data: {
@@ -21,6 +59,10 @@ new Vue({
         {id: 3, name: 'Кот'}
       ]
     },
+    // created: function(){
+    //  this.status =
+
+    //   },
     methods:{
       firstFunction(){
         alert('Запуск функции через VUE')
@@ -31,3 +73,4 @@ new Vue({
 
     }
   })
+  // --------------------------------------------------------------
