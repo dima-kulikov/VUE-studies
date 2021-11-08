@@ -1,30 +1,20 @@
 
 new Vue({
-el: '#practic',
-data:{
-  counter:1
-},
-created: function(){
-
-},
-methods:{
-  hight(){
-    this.counter++;
-    alert("ВСЕ РАБОТАЕТ!!")
+  el: '#practic',
+  data:{
+    counter:1
+  },
+  created: function(){
+  // this.counter = 5;
+  this.hight();
+  },
+  methods:{
+    hight(){
+      this.counter++;
+      // alert("ВСЕ РАБОТАЕТ!!")
+    }
   }
-}
-
-
-
-
-
-
-
-// created: function(){
-//   alert("ВСЕ РАБОТАЕТ!!")
-// },
-})
-
+  })
 
 
 
