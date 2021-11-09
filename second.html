@@ -13,9 +13,55 @@
 </head>
 
 <body>
+    <nav class="nav">
+        <div class="nav_btn" v-on:click="first">кнопка 1</div>
+        <div class="nav_btn" v-on:click="functiondd()">кнопка 2</div>
+        <div class="nav_btn">кнопка 3</div>
+    </nav>
+    <div id="new-vue" :title="message">
+        <!-- <p> name:{{ message }}, your id: {{id}}</p> -->
+    
+        <template v-if="status == 1">
+          <div :class="{first: isActive}">
+            <h1>Число 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto dolorum eaque impedit sequi tenetur officiis, laudantium exercitationem quaerat, molestias recusandae repellat blanditiis dolorem a, laboriosam id qui dolores commodi. Praesentium error optio molestiae laboriosam, fuga neque, repudiandae, molestias at placeat repellat iure.</p>
+          </div>
+    
+        </template>
+    
+        <template v-else-if="status == 2">
+          <div :style="{margin: margin + 'px', width: width + 'px', color:'red', width: '50%'} ">
+            <h1>Число 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto dolorum eaque impedit sequi tenetur officiis, laudantium exercitationem quaerat, molestias recusandae repellat blanditiis dolorem a, laboriosam id qui dolores commodi. Praesentium error optio molestiae laboriosam, fuga neque, repudiandae, molestias at placeat repellat iure.</p>
+          </div>
+        </template>
+    
+        <template v-else>
+          <div :class="{active: isActive}">
+            <h1>Число которого нет в списке</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore iusto dolorum eaque impedit sequi tenetur officiis, laudantium exercitationem quaerat, molestias recusandae repellat blanditiis dolorem a, laboriosam id qui dolores commodi. Praesentium error optio molestiae laboriosam, fuga neque, repudiandae, molestias at placeat repellat iure.</p>
+          </div>
+        </template>
+      </div>
+    
+
+      <div id="example-1">
+        <button v-on:click="counter += 1">+1</button>
+        <p>Кнопка выше была нажата {{ counter }} раз</p>
+      </div>
 
 
+      <div id="example-2">
+        <!-- `greet` — это название метода, определённого ниже -->
+        <button v-on:click="greet">Поприветствовать</button>
+      </div>
+      <script src="./js/script.js"></script>
 </body>
 
 </html>
 <!-- https://www.youtube.com/watch?v=4XTy6ucbLNg&list=PLvTBThJr861yMBhpKafII3HZLAYujuNWw&index=1 -->
+
+
+
+
+<!-- https://ru.vuejs.org/v2/guide/events.html -->

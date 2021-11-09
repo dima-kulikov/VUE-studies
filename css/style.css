@@ -17,3 +17,17 @@
    padding: 15px;
    text-align: center;
 }
+.nav{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 5px;
+}
+.nav_btn{
+    background-color: antiquewhite;
+    width: max-content;
+    padding: 5px;
+    cursor: pointer;
+}

@@ -31,11 +31,23 @@ new Vue({
       with: 400
 
     },
-    created: function(){
+    // created: function(){
      
-        alert(`Выбран ${this.status} статус`)
+    //     alert(`Выбран ${this.status} статус`)
       
-    }
+    // },
+    methods:{ 
+    first: function(){
+     this.status = 1
+        // alert(`Выбран ${this.status} статус`)
+      
+    },
+     functiondd(){
+      this.status = 2
+         // alert(`Выбран ${this.status} статус`)
+       
+     }
+    },
   })
   // --------------------------------------------------------------
   new Vue({
@@ -64,3 +76,30 @@ new Vue({
     }
   })
   // --------------------------------------------------------------
+
+  var example1 = new Vue({
+    el: '#example-1',
+    data: {
+      counter: 0
+    }
+  })
+
+
+
+  var example2 = new Vue({
+    el: '#example-2',
+    data: {
+      name: 'Vue.js'
+    },
+    // определяйте методы в объекте `methods`
+    methods: {
+      greet: function (event) {
+        // `this` внутри методов указывает на экземпляр Vue
+        alert('Привет, ' + this.name + '!')
+        // `event` — нативное событие DOM
+        if (event) {
+          alert(event.target.tagName)
+        }
+      }
+    }
+  })
