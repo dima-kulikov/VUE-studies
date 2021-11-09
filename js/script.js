@@ -18,37 +18,55 @@ new Vue({
 
 
 
-
-// ----------------------------------------------
-new Vue({
+  new Vue({
     el: '#new-vue',
-    data: {
-      message: 'Hello Vue!',
-      id:'10',
-      status: 3,
-      isActive: true,
-      margin: 100,
-      with: 400
+    data () {
+       return {
+           status: 3,
+       }
+    },
 
-    },
-    // created: function(){
-     
-    //     alert(`Выбран ${this.status} статус`)
-      
-    // },
     methods:{ 
-    first: function(){
-     this.status = 1
-        // alert(`Выбран ${this.status} статус`)
-      
+         first () {
+             this.status = 1
+             alert(`Выбран ${this.status} статус`);
     },
-     functiondd(){
+    second () {
       this.status = 2
-         // alert(`Выбран ${this.status} статус`)
+      alert(`Выбран ${this.status} статус`);
+},
+  }
+  }),
+// ----------------------------------------------
+// // new Vue({
+// //     el: '#new-vue',
+// //     data: {
+// //       message: 'Hello Vue!',
+// //       id:'10',
+// //       status: 3,
+// //       isActive: true,
+// //       margin: 100,
+// //       with: 400
+
+// //     },
+//     // created: function(){
+     
+//     //     alert(`Выбран ${this.status} статус`)
+      
+//     // },
+//     methods:{ 
+//     first: function(){
+//      this.status = 1
+//         // alert(`Выбран ${this.status} статус`)
+      
+//     },
+//      functiondd(){
+//       this.status = 2
+//          // alert(`Выбран ${this.status} статус`)
        
-     }
-    },
-  })
+//      }
+//     },
+//   })
   // --------------------------------------------------------------
   new Vue({
     el:'#second-vue',

@@ -13,13 +13,14 @@
 </head>
 
 <body>
-    <nav class="nav">
-        <div class="nav_btn" v-on:click="first">кнопка 1</div>
-        <div class="nav_btn" v-on:click="functiondd()">кнопка 2</div>
-        <div class="nav_btn">кнопка 3</div>
-    </nav>
+
     <div id="new-vue" :title="message">
         <!-- <p> name:{{ message }}, your id: {{id}}</p> -->
+        <nav class="nav">
+          <div class="nav_btn" v-on:click="first">кнопка 1</div>
+          <div class="nav_btn" v-on:click="second">кнопка 2</div>
+          <div class="nav_btn">кнопка 3</div>
+      </nav>
     
         <template v-if="status == 1">
           <div :class="{first: isActive}">
