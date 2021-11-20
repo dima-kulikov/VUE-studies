@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
 </head>
+
 <body>
-    
-<div id='app'>
-    
-<div>{{print}}</div>
 
-<div v-bind:title="title">Наведи на текст</div>
-
+    <div id='app'>
+        <div>{{print}}</div>
+        <div class="block" v-bind:title="title">Наведи на текст</div>
+    </div>
 
 
-</div>
+    <div id="app-2">
+        <p>
+        <ol>
+            <li v-for='todo in todos'>{{todo.text}}
+                <ul>
+                    <li>имя героя {{todo.name}}</li>
+                </ul>
+            </li>
+        </ol>
+        </p>
+    </div>
+
+    <h2></h2>
 
 
-<script src="./js/vuejs.js"></script>
+    <script src="./js/vuejs.js"></script>
 </body>
+
 </html>
