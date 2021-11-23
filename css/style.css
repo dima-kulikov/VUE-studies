@@ -33,7 +33,21 @@
 }
 .block {
   margin: 30px;
-  border: 2px solid black;
+  border: 2px solid rgb(96, 127, 141);
   width: max-content;
   padding: 10px 15px;
+  box-shadow: 0 5px 5px -5px rgba(29, 34, 28, 0.8);
+}
+
+.grey {
+  background: grey;
+}
+.yellow {
+  background: yellow;
+}
+.pink {
+  background: pink;
+}
+.blue {
+  background: blue;
 }

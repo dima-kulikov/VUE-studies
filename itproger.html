@@ -12,7 +12,16 @@
 
 <body>
 
-
+    <div id="add-1">
+        <div class="block">
+            <p class="block" v-on:click='rename'> нажми </p>
+            <p>{{message}}</p>
+        </div>
+        <div class="block">
+            <p :class="styleCSS " class="block"> Цвет:{{styleCSS}}</p>
+            <input type="text" v-on:input="styleCSS = $event.target.value">
+        </div>
+    </div>
 
 
     <script src="./js/itproger.js"></script>
@@ -21,4 +30,4 @@
 </html>
 
 
-<!-- https://www.youtube.com/watch?v=U-Ivsm49b30&list=PL0lO_mIqDDFVVNsIt02JBIdBkjNVHIoum&index=2 -->
+<!-- https://www.youtube.com/watch?v=P-VB74mdBA4&list=PL0lO_mIqDDFVVNsIt02JBIdBkjNVHIoum&index=3-->
