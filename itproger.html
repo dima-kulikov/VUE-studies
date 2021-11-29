@@ -11,6 +11,23 @@
 </head>
 
 <body>
+<div id="add-3">
+    <ul> 
+        <li v-for="(avto, i) in cars">{{i + 1}} - {{avto.car}} имеет скорость: {{avto.speed}} км\час</li>
+    </ul>
+
+    <button v-on:click="show = !show"> Показать \ скрыть текст</button>
+    <p v-if="show">Первый текст доступен и открыт</p>
+    <p v-else> главный текст скрыт</p>
+</div>
+
+
+    <div id="add-2" class="block">
+
+        <input type="text" v-on:input="increment ($event.target.value)">
+        <p>{{value}}</p>
+        <p>{{doblValue}}</p>
+    </div>
 
     <div id="add-1">
         <div class="block">
@@ -23,16 +40,14 @@
         </div>
     </div>
 
-    <div id="add-2">
-        <input type="text" v-on:input="increment ($event.target.value)">
-        <p>{{value}}</p>
-        <p>{{doblValue}}</p>
-    </div>
-
     <script src="./js/itproger.js"></script>
 </body>
 
 </html>
 
 
-<!-- https://www.youtube.com/watch?v=P-VB74mdBA4&list=PL0lO_mIqDDFVVNsIt02JBIdBkjNVHIoum&index=3-->
+<!--
+    
+https://www.youtube.com/watch?v=UwX73mdsu3I&list=PL0lO_mIqDDFVVNsIt02JBIdBkjNVHIoum&index=5
+
+-->
