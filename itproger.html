@@ -11,15 +11,17 @@
 </head>
 
 <body>
-<div id="add-3">
-    <ul> 
-        <li v-for="(avto, i) in cars">{{i + 1}} - {{avto.car}} имеет скорость: {{avto.speed}} км\час</li>
-    </ul>
+    <div id="add-3">
+        <ul>
+            <li v-for="(avto, i) in cars">
+                {{i + 1}} - {{avto.car}} имеет скорость: {{avto.speed}} км\час
+            </li>
+        </ul>
 
-    <button v-on:click="show = !show"> Показать \ скрыть текст</button>
-    <p v-if="show">Первый текст доступен и открыт</p>
-    <p v-else> главный текст скрыт</p>
-</div>
+        <button v-on:click="show = !show"> Показать \ скрыть текст</button>
+        <p v-if="show">Первый текст доступен и открыт</p>
+        <p v-else>{{mess | upFunction | plus}}</p>
+    </div>
 
 
     <div id="add-2" class="block">
@@ -31,7 +33,7 @@
 
     <div id="add-1">
         <div class="block">
-            <p class="block" v-on:click = "rename"> нажми </p>
+            <p class="block" v-on:click="rename"> нажми </p>
             <p>{{message}}</p>
         </div>
         <div class="block">
@@ -48,6 +50,6 @@
 
 <!--
     
-https://www.youtube.com/watch?v=UwX73mdsu3I&list=PL0lO_mIqDDFVVNsIt02JBIdBkjNVHIoum&index=5
+https://www.youtube.com/watch?v=ttUD4KLglL4&list=PL0lO_mIqDDFVVNsIt02JBIdBkjNVHIoum&index=6
 
 -->

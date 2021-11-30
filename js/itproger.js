@@ -1,13 +1,28 @@
+Vue.filter("plus", function (value) {
+    return value + 55;
+})
+
 new Vue({
     el: "#add-3",
     data: {
         show: true,
-        cars : [
-            {car:"bmv", speed: 300},
-            {car:"mers", speed: 290},
-            {car:"ford", speed: 260},
-            {car:"reno", speed: 197}
+        mess: 'второстепенный текст',
+        cars: [
+            { car: "bmv", speed: 300 },
+            { car: "mers", speed: 290 },
+            { car: "ford", speed: 260 },
+            { car: "reno", speed: 197 }
         ]
+    },
+    computed: {
+        showMess() {
+            return this.mess.toUpperCase();
+        }
+    },
+    filter: {
+        upFunction(value) {
+            value.toUpperCase();
+        }
     }
 });
 
@@ -26,7 +41,7 @@ new Vue({
         }
     }
 });
-  
+
 
 new Vue({
     el: '#add-1',
