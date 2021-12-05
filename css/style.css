@@ -51,3 +51,13 @@
 .blue {
   background: blue;
 }
+.car{
+  width: 30%;
+  margin: 10px 31%;
+  background-color: #fafafa;
+  border: 2px solid salmon;
+  border-radius: 10px;
+  padding: 1.2% 2%;
+  color: burlywood;
+  font-size: 1.1em;
+}

@@ -1,3 +1,27 @@
+Vue.component('my-car', {
+    data: function () {
+        return {
+            cars: [
+                { model: "BMW" },
+                { model: "volovo" },
+                { model: "mers" },
+                { model: "ford" },
+                { model: "audi" },
+                { model: "fiat" }
+            ]
+        }
+    },
+    template: `<div><div class="car" v-for="car in cars"> <p>{{car.model}}</p></div></div>`
+});
+
+new Vue({
+    el: "#component",
+    data: {
+
+    }
+})
+
+
 Vue.filter("plus", function (value) {
     return value + 55;
 })
